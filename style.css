@@ -15,6 +15,7 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
 #part1 {
@@ -87,20 +88,22 @@ body {
 #vertical-text{
     position:absolute;
     transform: rotate(90deg);
-    right:-54%;
-    top:-3%;
+    left:97%;
+    top:3%;
+    width:100%;
+    z-index: 6;
     transform-origin: 0% 0%;
     /* transform: translateY(180deg); */
 }
 #vertical-text h1{
-    font-size: 60px;
+    font-size: 3.7vw;
     text-transform: uppercase;
     font-weight: 900;
     color: transparent;
     font-family:Georgia, 'Times New Roman', Times, serif;
     -webkit-text-stroke-width:2px;
     -webkit-text-stroke-color:rgb(215, 73, 147);
-    letter-spacing: 12px;
+    letter-spacing: 0.5vw;
     
     text-shadow:  -22px -22px 5px rgb(82, 54, 118);
 }
@@ -137,5 +140,55 @@ gap:70px;
     
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color:rgb(247, 158, 227);;
+}
+@media (max-width:400px) {
+   
+    #nav{
+        flex-direction: column;
+        gap:10px;
+        left: 0%;
+        width: 100%;
+    }
+    #nav h5{
+        font-size: 25px;
+        filter: blur(1px);
+        letter-spacing: 1px;
+    } 
+    #nav img{
+        height: 50px;
+    }
+    #small-img-div{
+        height: 15vh;
+        width: 10vh;
+        top: 23%;
+        left: 6%;
+    }
+    #part1{
+        width: 20vw;
+       
+    }
+   #part3{
+    width: 20vw;
+    opacity: .9;
+   }
+   #part2{
+    width: calc(100%-40vw);
+    background-position: 300px 0px;
+   }
+   #vertical-text{
+    left:90%;
+    top:25%
+   }
+   #vertical-text h1{
+    font-size: 3vh;
+   }
+   #text-div h1{
+    font-size: 45px;
+    filter: blur(1px);
+   }
+   #text-div{
+    z-index: 10;
+    top:80%
+   }
 }
    
