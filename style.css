@@ -160,8 +160,8 @@ gap:70px;
     #small-img-div{
         height: 15vh;
         width: 10vh;
-        top: 23%;
-        left: 6%;
+        top: 30%;
+        left: 5%;
     }
     #part1{
         width: 20vw;
@@ -180,10 +180,11 @@ gap:70px;
     top:25%
    }
    #vertical-text h1{
-    font-size: 3vh;
+    font-size: 30px;
    }
    #text-div h1{
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 45px;
     filter: blur(1px);
    }
    #text-div{
